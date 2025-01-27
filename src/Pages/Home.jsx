@@ -5,7 +5,7 @@ import phone from '../assets/iphone.jpg'
 import { FaArrowRight, FaDownload } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
-const Home = () => {
+const HomePage = () => {
   return (
     <Layout>
       <div className="">
@@ -43,4 +43,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage

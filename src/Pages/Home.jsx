@@ -4,21 +4,29 @@ import about from '../assets/home.png'
 import phone from '../assets/iphone.jpg'
 import { FaArrowRight, FaDownload } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-
+import apple from '../assets/apple.png'
+import google from '../assets/google.png'
+import web from '../assets/web.png'
+import { homeBox } from '../Components/Utils'
 const HomePage = () => {
   return (
     <Layout>
       <div className="">
-        <div className="bg-[#ff850b] z-30 md:flex pt-[15rem] lg:px-24 px-10 items-center justify-center h-auto lg:h-[32rem]">
-          <div className="text-white lg:px-1 -mt-[12rem]">
-            <div className="text-4xl font-bold">The First Digital Currency You Can Mine on Your Phone</div>
-            <div className="text-xl mt-4 font-semibold">Start mining Swift cryptocurrency today with our free, energy-light mobile app!</div>
-            <div className="flex gap-5 text-white border rounded-lg hover:bg-white hover:text-[#ff850b] border-white w-fit py-4 px-2 mt-16 ">
-              <div className="">Download Swift App Now</div>
-              <FaDownload />
+        <div className="bg-[#ff850b] z-30 lg:flex lg:px-24 pt-24 px-10 items-center justify-center h-auto ">
+          <div className="text-white lg:px-1 ">
+            <div className="lg:text-4xl text-2xl font-bold">The First Digital Currency You Can Mine on Your Phone</div>
+            <div className="lg:text-xl mt-4 font-semibold">Start mining Swift cryptocurrency today with our free, energy-light mobile app!</div>
+
+            <div className="flex flex-wrap z-20 my-10 gap-3 items-center">
+              <a href=""> <div className="flex items-center gap-5 bg-black border rounded-lg border-white w-[13.4rem] py-4 px-4 text-lg font-semibold">
+                <div className="">Web Download</div>
+                <FaDownload />
+              </div></a>
+              <a href="" rel="noreferrer"> <img src={apple} alt="" className="" /> </a>
+              <a href="" rel="noreferrer"> <img src={google} alt="" className="" /> </a>
             </div>
           </div>
-          <img src={about} alt="" className="w-[40rem] z-20" />
+          <div className=" z-20"><img src={about} alt="" className=" " /></div>
 
         </div>
         <div className="lg:-mt-10">
@@ -38,7 +46,37 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className=""></div>
+      <div className="">
+        <div className="bg-white my-10 rounded-md flex mx-32 items-center gap-10 justify-between">
+          {homeBox.map((item, index) => (
+            <div className="flex shadow-2xl py-6 px-4 border border-gray-300 rounded-lg flex-col text-center justify-center items-center" key={index}>
+              <img src={item.img} alt="" className="w-20" />
+              <div className="text-xl font-bold my-3"> {item.title} </div>
+              <div className=""> {item.text} </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="">
+        <div className="bg-[#ff850b] z-30 lg:flex lg:px-24 pt-24 px-10 items-center justify-center h-auto my-10 ">
+          <div className=" z-20"><img src={about} alt="" className=" " /></div>
+          <div className="text-white lg:px-1 ">
+            <div className="lg:text-4xl text-2xl font-bold">Download the mobile app to start mining today! Join now.</div>
+            <div className="lg:text-xl mt-4 font-semibold">Keep your money! Mining Swift is free. All you need is an invitation from an existing trusted member on the network. If you have an invitation you can download the mobile app below.            </div>
+
+            <div className="flex flex-wrap z-20 my-10 gap-3 items-center">
+              <a href=""> <div className="flex items-center gap-5 bg-black border rounded-lg border-white w-[13.4rem] py-4 px-4 text-lg font-semibold">
+                <div className="">Web Download</div>
+                <FaDownload />
+              </div></a>
+              <a href="" rel="noreferrer"> <img src={apple} alt="" className="" /> </a>
+              <a href="" rel="noreferrer"> <img src={google} alt="" className="" /> </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </Layout>
   )
 }

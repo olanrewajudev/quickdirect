@@ -1,6 +1,6 @@
 import About from "../Pages/About";
 import Faqs from "../Pages/Faqs";
-import Home from "../Pages/HOme";
+import Home from "../Pages/Home";
 import News from "../Pages/News";
 import Terms from "../Pages/Terms";
 

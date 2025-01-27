@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { GeneralRoutes } from './Components/Routes'
+import Loader from './Components/Loader'
 
 const App = () => {
   return (
@@ -8,7 +9,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           {GeneralRoutes.map((route, index) => (
-            <Route key={index} path={`/${route.path}`} element={<route.element />} />
+            <Route key={index} path={`/${route.path}`} element={ <Loader><route.element /></Loader> } />
           ))}
         </Routes>
       </BrowserRouter>

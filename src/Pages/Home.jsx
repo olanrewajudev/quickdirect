@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../Components/Layout'
 import about from '../assets/home.png'
-import phone from '../assets/iphone.jpg'
+import phone from '../assets/iphone.png'
 import { FaArrowRight, FaDownload } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import apple from '../assets/apple.png'
@@ -26,7 +26,7 @@ const HomePage = () => {
               <a href="" rel="noreferrer"> <img src={google} alt="" className="" /> </a>
             </div>
           </div>
-          <div className=" z-20"><img src={about} alt="" className=" " /></div>
+          <div className=" z-20"><img src={phone} alt="" className=" w-full" /></div>
 
         </div>
         <div className="lg:-mt-10">
@@ -34,8 +34,8 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-10 justify-center">
-        <img src={phone} alt="" className="w-[15rem]" />
+      <div className="md:flex items-center gap-10 mx-5 justify-center">
+        <img src={about} alt="" className="" />
         <div className="">
           <div className="text-3xl font-bold">Swift makes crypto mining easy.</div>
           <div className="">Breakthrough tech allows you to mine Swift on your phone without draining your battery.</div>
@@ -47,9 +47,9 @@ const HomePage = () => {
       </div>
 
       <div className="">
-        <div className="bg-white my-10 rounded-md flex mx-32 items-center gap-10 justify-between">
+        <div className="bg-white my-10 rounded-md lg:flex mx-32 items-center gap-10 justify-between">
           {homeBox.map((item, index) => (
-            <div className="flex shadow-2xl py-6 px-4 border border-gray-300 rounded-lg flex-col text-center justify-center items-center" key={index}>
+            <div className="flex shadow-2xl py-6 px-4 mb-2 border border-gray-300 rounded-lg flex-col text-center justify-center items-center" key={index}>
               <img src={item.img} alt="" className="w-20" />
               <div className="text-xl font-bold my-3"> {item.title} </div>
               <div className=""> {item.text} </div>
@@ -59,7 +59,7 @@ const HomePage = () => {
       </div>
 
       <div className="">
-        <div className="bg-[#ff850b] z-30 lg:flex lg:px-24 pt-24 px-10 items-center justify-center h-auto my-10 ">
+        <div className="bg-[#ff850b] z-30 lg:flex lg:px-24 pt-24 px-10 items-center justify-center h-auto my-10 py-5 ">
           <div className=" z-20"><img src={about} alt="" className=" " /></div>
           <div className="text-white lg:px-1 ">
             <div className="lg:text-4xl text-2xl font-bold">Download the mobile app to start mining today! Join now.</div>

@@ -6,6 +6,7 @@ import { FaArrowRight, FaDownload } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import apple from '../assets/apple.png'
 import google from '../assets/google.png'
+import home2 from '../assets/home2.png'
 import web from '../assets/web.png'
 import { homeBox } from '../Components/Utils'
 const HomePage = () => {
@@ -34,11 +35,12 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="md:flex items-center gap-10 mx-5 justify-center">
-        <img src={about} alt="" className="" />
+      <div className="xl:flex items-center gap-10 mx-5 justify-center">
+      <img src={about} alt="" className="" />
         <div className="">
           <div className="text-3xl font-bold">Swift makes crypto mining easy.</div>
-          <div className="">Breakthrough tech allows you to mine Swift on your phone without draining your battery.</div>
+          <div className="text-lg font-semibold mt-5">Breakthrough tech allows you to mine Swift on your phone without draining your battery.</div>
+          <div className="text-lg font-semibold mb-5">The Swift Ecosystem is the realization of a bold dream by Team of world-class Ai and crypto Tech Expert , visionaries in the crypto industry since 2015. With years of relentless dedication to research, innovation, and community building, a team of world-class experts who share a singular goal: to make blockchain accessible, rewarding, and transformative for everyone.</div>
           <Link to='/about' className="flex items-center gap-5 bg-[#ff850b] text-white border rounded-lg mt-5 border-white w-fit py-4 px-2 ">
             <div className="">Learn more about Swift</div>
             <FaArrowRight />
@@ -46,10 +48,10 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="">
-        <div className="bg-white my-10 rounded-md lg:flex mx-32 items-center gap-10 justify-between">
+      <div className="my-20">
+        <div className="bg-white my-10  rounded-md lg:flex lg:mx-32 mx-10 items-center gap-10 justify-between">
           {homeBox.map((item, index) => (
-            <div className="flex shadow-2xl py-6 px-4 mb-2 border border-gray-300 rounded-lg flex-col text-center justify-center items-center" key={index}>
+            <div className="flex shadow-2xl py-6 w-full px-4 mb-2 border border-gray-300 rounded-lg flex-col text-center justify-center items-center" key={index}>
               <img src={item.img} alt="" className="w-20" />
               <div className="text-xl font-bold my-3"> {item.title} </div>
               <div className=""> {item.text} </div>
@@ -59,8 +61,8 @@ const HomePage = () => {
       </div>
 
       <div className="">
-        <div className="bg-[#ff850b] z-30 lg:flex lg:px-24 pt-24 px-10 items-center justify-center h-auto my-10 py-5 ">
-          <div className=" z-20"><img src={about} alt="" className=" " /></div>
+        <div className="bg-[#ff850b] z-30 lg:flex  px-10 items-center justify-center h-auto my-10 py-5 ">
+          <div className=" z-20"><img src={home2} alt="" className=" " /></div>
           <div className="text-white lg:px-1 ">
             <div className="lg:text-4xl text-2xl font-bold">Download the mobile app to start mining today! Join now.</div>
             <div className="lg:text-xl mt-4 font-semibold">Keep your money! Mining Swift is free. All you need is an invitation from an existing trusted member on the network. If you have an invitation you can download the mobile app below.            </div>

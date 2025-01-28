@@ -6,8 +6,6 @@ import { TopNavsLinks } from './Utils'
 import { FaTimes } from 'react-icons/fa'
 
 const Header = () => {
-    const [mobile, setMobile] = useState(false);
-    const MobileIcon = mobile ? FaTimes : SlMenu;
     const [topNav, setTopNav] = useState(false);
     const TopNavIcon = topNav ? FaTimes : SlMenu;
     return (
@@ -17,11 +15,12 @@ const Header = () => {
                 <div className="gap-10  hidden lg:flex">
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
-                    <Link to="">Privacy Policy</Link>
-                    <Link to="">Terms & Condition</Link>
-                    <Link to="">News Blog</Link>
+                    <Link to="/privacy">Privacy Policy</Link>
+                    <Link to="/faq">Faqs</Link>
+                    <Link to="/terms">Terms & Condition</Link>
+                    <Link to="/news">News Blog</Link>
                 </div>
-                <div className="xl:hidden flex text-xl lg:text-2xl cursor-pointer">
+                <div className="lg:hidden flex text-xl lg:text-2xl cursor-pointer">
                     <TopNavIcon onClick={() => setTopNav(!topNav)} />
                 </div>
 

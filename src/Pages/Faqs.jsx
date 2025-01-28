@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Layout from '../Components/Layout'
-import about from '../assets/home2.png'
-import home from '../assets/home.png'
+import about from '../assets/faq.png'
 import { FaPlus, FaMinus, FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Import icons
 import { motion, AnimatePresence } from 'framer-motion'; // Import framer-motion
 import { Packages } from '../Components/Utils';
@@ -15,7 +14,7 @@ const Faqs = () => {
   return (
     <Layout>
       <div className="">
-        <div className="bg-[#ff850b] z-30 md:flex pt-[5rem] lg:px-20 px-10 items-center justify-center h-auto lg:h-[32rem]">
+        <div className="bg-[#ff850b] z-30 md:flex pt-[7rem] lg:px-20 px-10 items-center justify-center h-auto lg:h-[32rem]">
           <img src={about} alt="" className="lg:w-[35rem] w-[25rem] z-30 object-cover h-auto" />
           <div className="text-white lg:px-1">
             <div className="text-4xl font-semibold">Support & FAQs (Frequently Asked Questions)            </div>

@@ -13,6 +13,7 @@ export const TopNavsLinks = [
     { title: 'home', link: '/' },
     { title: 'About', link: '/about' },
     { title: 'Privacy Policy', link: '/privacy' },
+    { title: 'FAQs', link: '/faq' },
     { title: 'Terms & Conditions', link: '/terms' },
     { title: 'News Blog', link: '/news' },
 ]

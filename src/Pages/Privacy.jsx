@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../Components/Layout'
-import about from '../assets/about.png'
+import about from '../assets/policy.png'
 
 const Privacy = () => {
   return (
@@ -9,9 +9,12 @@ const Privacy = () => {
         <div className="bg-[#ff850b] z-30 md:flex pt-[5rem] lg:px-20 px-10 items-center justify-center h-auto lg:h-[32rem]">
           <img src={about} alt="" className="lg:w-[35rem] w-[25rem] z-30 object-cover h-auto" />
           <div className="text-white lg:px-1">
-            <div className="text-4xl font-semibold">About Us</div>
-            <div className="text-lg">Welcome to the Swift Ecosystem, a groundbreaking realm where blockchain technology, innovation, and opportunity converge to create a limitless future. Swift is not just a platform—it’s a movement, a vision, and a promise to redefine the way the world interacts with digital assets.
+            <div className="text-4xl mb-3 font-semibold">Privacy Policy for Swift Points Mining App</div>
+            <div className="text-lg mb-3">
+              At Swift Points, your privacy is important to us. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information when you use the Swift Points Mining App and associated services within the Swift Ecosystem.
             </div>
+            <div className="mb-3 text-lg">By using our app, you agree to the terms of this Privacy Policy. If you do not agree, please refrain from using our services.            </div>
+            <div className="text-lg font-semibold">Effective Date: 9th January 2024</div>
           </div>
         </div>
         <div className="lg:-mt-10">
@@ -153,7 +156,7 @@ const Privacy = () => {
           <div className="">Phone: +1 332 350 929</div>
         </div>
       </div>
-      <div className="text-center">This Privacy Policy is designed to comply with major data protection regulations, including GDPR, CCPA, and other relevant laws.</div>
+      <div className="text-center mx-5 font-bold text-lg">This Privacy Policy is designed to comply with major data protection regulations, including GDPR, CCPA, and other relevant laws.</div>
     </Layout>
   )
 }

@@ -12,8 +12,8 @@ function Footer() {
     <>
 
       <div className="bg-[#ff850b] px-5 mt-10 py-5 text-white">
-        <div className="  text-white py-5">
-          <div className="lg:flex items-center justify-center ">
+        <div className=" text-white py-5">
+          <div className="lg:flex gap-5 items-center justify-center ">
             <div className="">
               <p className='text-lg font-bold my-3'>SWIFT MINING APP</p>
               <p className='text-lg mb-5 font-medium'>Welcome to the Swift Ecosystem, a groundbreaking realm where blockchain technology, innovation, and opportunity converge to create a limitless future. Swift is not just a platform—it’s a movement, a vision, and a promise to redefine the way the world interacts with digital assets.</p>

@@ -61,20 +61,13 @@ const HomePage = () => {
       </div>
 
       <div className="">
-        <div className="bg-[#ff850b] z-30 lg:flex  px-10 items-center justify-center h-auto my-10 py-5 ">
+        <div className="bg-[#ff850b] z-30 lg:flex lg:mx-32 mx-10 rounded-2xl  px-10 items-center justify-center h-auto my-10 py-5 ">
           <div className=" z-20"><img src={home2} alt="" className=" " /></div>
           <div className="text-white lg:px-1 ">
             <div className="lg:text-4xl text-2xl font-bold">Download the mobile app to start mining today! Join now.</div>
             <div className="lg:text-xl mt-4 font-semibold">Keep your money! Mining Swift is free. All you need is an invitation from an existing trusted member on the network. If you have an invitation you can download the mobile app below.            </div>
 
-            <div className="flex flex-wrap z-20 my-10 gap-3 items-center">
-              <a href=""> <div className="flex items-center gap-5 bg-black border rounded-lg border-white w-[13.4rem] py-4 px-4 text-lg font-semibold">
-                <div className="">Web Download</div>
-                <FaDownload />
-              </div></a>
-              <a href="" rel="noreferrer"> <img src={apple} alt="" className="" /> </a>
-              <a href="" rel="noreferrer"> <img src={google} alt="" className="" /> </a>
-            </div>
+        
           </div>
 
         </div>

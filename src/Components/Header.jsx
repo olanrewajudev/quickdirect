@@ -9,9 +9,9 @@ const Header = () => {
     const [topNav, setTopNav] = useState(false);
     const TopNavIcon = topNav ? FaTimes : SlMenu;
     return (
-        <div className={`fixed w-full bg-white z-50 shadow-xl gap-10  ${topNav ? 'h-[20rem]' : ''} transition-all`}>
+        <div className={`fixed w-full bg-white z-50 shadow-xl gap-10  ${topNav ? 'h-[22rem]' : ''} transition-all`}>
             <div className="bg-[#ff850b] fixed w-full border-b px-20 z-50 text-white p-4 flex justify-between items-center">
-                <div className=""> <img src={logo} alt="" className="" /> </div>
+                <Link to='/' className=""> <img src={logo} alt="" className="" /> </Link>
                 <div className="gap-10  hidden lg:flex">
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
@@ -25,7 +25,7 @@ const Header = () => {
                 </div>
 
             </div>
-            {topNav && <div className="w-11/12 lg:w-10/12 mx-auto pt-20">
+            {topNav && <div className="w-11/12 lg:w-10/12 px-7 mx-auto pt-20">
                 <div className="flex flex-col">
                     {TopNavsLinks.map((item, index) => (
                         <Link to={item.link} key={index} className='uppercase text-xs py-3 px-4 truncate'>{item.title}</Link>

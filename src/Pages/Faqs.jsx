@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Layout from '../Components/Layout'
 import about from '../assets/home2.png'
+import home from '../assets/home.png'
 import { FaPlus, FaMinus, FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Import icons
 import { motion, AnimatePresence } from 'framer-motion'; // Import framer-motion
 import { Packages } from '../Components/Utils';
@@ -27,44 +28,47 @@ const Faqs = () => {
         </div>
       </div>
 
-      <div className="lg:flex items-start justify-between lg:mx-32 mx-5 mt-10  lg:mt-20">
-        <div className="border rounded-lg px-2">
-          <div className="mt-10">
-            {Packages.map((item) => (
-              <div key={item.id}>
-                <div onClick={() => toggleService(item.id)} className="lg:w-[50vw]">
-                  <div className="flex items-center justify-between cursor-pointer">
-                    <p className='text-lg font-semibold'>{item.text}</p>
-                    <button className='p-1.5'>
-                      {isOpen[item.id] ? <FaChevronUp /> : <FaChevronDown />}
-                    </button>
+      <div className=" mx-5 lg:mx-32">
+        <div className="">
+          <div className=" mb-10">
+            <div className="font-bold text-lg">Need More Help?</div>
+            <div className="font-semibold">Visit our Help Center in the app or check our website for more resources. Stay connected with our social media channels for updates, announcements, and community support!</div>
+          </div>
+          <div className="border rounded-lg px-2">
+            <div className="mt-10">
+              {Packages.map((item) => (
+                <div key={item.id}>
+                  <div onClick={() => toggleService(item.id)} className="lg:w-full">
+                    <div className="flex items-center justify-between cursor-pointer">
+                      <p className='lg:text-xl text-lg font-bold'>{item.text}</p>
+                      <button className='p-1.5 text-gray-600'>
+                        {isOpen[item.id] ? <FaChevronUp /> : <FaChevronDown />}
+                      </button>
+                    </div>
                   </div>
+                  <div className="">
+                    <AnimatePresence>
+                      {isOpen[item.id] && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: 'auto' }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="flex flex-col items-start lg:w-[50vw] gap-2.5 mt-2"
+                        >
+                          <span className="bg-primary-50 p-2 text-base font-medium">{item.droptext.text}</span>
+                          <span className="bg-primary-50 p-2 text-base font-medium">{item.droptext.subtext}</span>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                  <div className="border border-gray-300 w-full my-5"></div>
                 </div>
-                <div className="">
-                  <AnimatePresence>
-                    {isOpen[item.id] && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="flex flex-col items-start lg:w-[50vw] gap-2.5 mt-2"
-                      >
-                        <span className="bg-primary-50 p-2 text-sm font-medium">{item.droptext.text}</span>
-                        <span className="bg-primary-50 p-2 text-sm font-medium">{item.droptext.subtext}</span>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-                <div className="border w-full my-5"></div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-        <div className="w-full">
-          <img src={about} alt="" className="w-full" />
-        </div>
-        </div>
+      </div>
     </Layout>
   )
 }

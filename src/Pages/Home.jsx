@@ -48,7 +48,7 @@ const HomePage = () => {
       
 
       <div className="xl:flex mt-20 items-center gap-10 mx-5 justify-center relative">
-        <img src={reddy} alt="" className="absolute size-[15rem] lg:size-[30rem] -top-10 -right-10 object-cover opacity-30 -z-10" />
+        <img src={reddy} alt="" className="absolute size-[15rem] lg:size-[30rem] -top-10 right-0 object-cover opacity-30 -z-10" />
         <img src={about} alt="" className="" />
         <div className="">
           <div className="text-4xl lg:text-6xl font-extrabold">Swift makes crypto mining easy.</div>

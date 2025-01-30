@@ -1,12 +1,14 @@
+import { BsPhoneFlip } from 'react-icons/bs'
 import decentralized from '../assets/decentralized.png'
 import mobile from '../assets/phone.png'
-import www from '../assets/www.png'
+import { GrSecure } from 'react-icons/gr'
+import { FaPeopleGroup } from 'react-icons/fa6'
 
 
 export const homeBox = [
-    { img: decentralized, title: 'Decentralized', text: 'Secure, Immutable, non-counterfeitable and interoperable digital money.' },
-    { img: mobile, title: 'Mobile First', text: 'Works on your mobile phone and does not drain your battery.' },
-    { img: www, title: 'User & Planet-Friendly', text: 'Easy to use, secure at scale, without the massive electrical waste.' },
+    { Icon: GrSecure, title: 'Decentralized', text: 'Secure, Immutable, non-counterfeitable and interoperable digital money.' },
+    { Icon: BsPhoneFlip, title: 'Mobile First', text: 'Works on your mobile phone and does not drain your battery.' },
+    { Icon: FaPeopleGroup, title: 'User & Planet-Friendly', text: 'Easy to use, secure at scale, without the massive electrical waste.' },
 ]
 
 export const TopNavsLinks = [
@@ -15,7 +17,6 @@ export const TopNavsLinks = [
     { title: 'Privacy Policy', link: '/privacy' },
     { title: 'FAQs', link: '/faq' },
     { title: 'Terms & Conditions', link: '/terms' },
-    { title: 'News Blog', link: '/news' },
 ]
 
 export const Packages = [

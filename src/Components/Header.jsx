@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/react.svg'
+import logo from '../assets/swift_logo.png'
 import { SlMenu } from 'react-icons/sl'
 import { TopNavsLinks } from './Utils'
 import { FaTimes } from 'react-icons/fa'
@@ -9,16 +9,15 @@ const Header = () => {
     const [topNav, setTopNav] = useState(false);
     const TopNavIcon = topNav ? FaTimes : SlMenu;
     return (
-        <div className={`fixed w-full bg-white z-50 shadow-xl gap-10  ${topNav ? 'h-[22rem]' : ''} transition-all`}>
-            <div className="bg-[#ff850b] fixed w-full border-b px-20 z-50 text-white p-4 flex justify-between items-center">
-                <Link to='/' className=""> <img src={logo} alt="" className="" /> </Link>
-                <div className="gap-10  hidden lg:flex">
+        <div className={`fixed w-full bg-white z-50 shadow-xl gap-10  ${topNav ? 'h-[22rem]' : 'h-0'} transition-all`}>
+            <div className="bg-white fixed w-full px-10 z-50 text- p-4 flex justify-between items-center">
+                <Link to='/' className=""> <img src={logo} alt="" className="h-12 w-auto" /> </Link>
+                <div className="gap-10 hidden lg:flex">
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/privacy">Privacy Policy</Link>
                     <Link to="/faq">Faqs</Link>
                     <Link to="/terms">Terms & Condition</Link>
-                    <Link to="/news">News Blog</Link>
                 </div>
                 <div className="lg:hidden flex text-xl lg:text-2xl cursor-pointer">
                     <TopNavIcon onClick={() => setTopNav(!topNav)} />

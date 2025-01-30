@@ -5,10 +5,29 @@ import about from '../assets/policy.png'
 const Privacy = () => {
   return (
     <Layout>
-      <div className="">
+          <div className="">
+            <div className="bg-[#f7f5f6]">
+              <div className="grid grid-cols-1 lg:grid-cols-5 w-11/12 mx-auto lg:w-10/12 pt-28 lg:pt-20 h-[45rem] sm:h-[40rem] lg:h-auto">
+                <div className="text-black z-30 lg:px-1 relative lg:col-span-3">
+                  <h1 className="lg:text-6xl text-3xl sm:text-4xl md:text-5xl font-extrabold pt-10">Privacy Policy for Swift Points Mining  <span className="bg-[#ff850b] text-white py-1 px-1.5 text-2xl md:text-3xl lg:text-4xl rounded-lg -translate-y-2">App.</span> </h1>
+                  <div className="lg:text-xl mt-4 font-semibold">At Swift Points, your privacy is important to us. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information when you use the Swift Points Mining App and associated services within the Swift Ecosystem. </div>
+                  <div className="lg:text-xl mt-4 font-semibold">By using our app, you agree to the terms of this Privacy Policy. If you do not agree, please refrain from using our services.</div>
+                  <div className="lg:text-xl mt-4 font-semibold">Effective Date: 9th January 2024</div>
+                </div>
+                <div className="relative lg:col-span-2">
+                  <div className="-mt-[11rem] lg:-mt-5 lg:z-10 absolute w-fit top-0 right-0 left-0 mx-auto"><img src={about} alt="" className=" h-[28rem] sm:h-[33rem] lg:h-[44rem]object-cover" /></div>
+                </div>
+    
+              </div>
+            </div>
+            <div className="lg:-mt-10 -mt-6">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f7f5f6 " fillOpacity="1" d="M0,160L26.7,138.7C53.3,117,107,75,160,80C213.3,85,267,139,320,149.3C373.3,160,427,128,480,144C533.3,160,587,224,640,256C693.3,288,747,288,800,250.7C853.3,213,907,139,960,122.7C1013.3,107,1067,149,1120,186.7C1173.3,224,1227,256,1280,234.7C1333.3,213,1387,139,1413,101.3L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
+            </div>
+          </div>
+      {/* <div className="">
         <div className="bg-[#f7f5f6] z-30 md:flex pt-[5rem] lg:px-20 px-10 items-center justify-center h-auto lg:h-[32rem]">
           <img src={about} alt="" className="lg:w-[35rem] w-[25rem] z-30 object-cover h-auto" />
-          <div className="text-[#ff850b] lg:px-1">
+          <div className=" lg:px-1">
             <div className="text-4xl mb-3 font-semibold">Privacy Policy for Swift Points Mining App</div>
             <div className="text-lg mb-3">
               At Swift Points, your privacy is important to us. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information when you use the Swift Points Mining App and associated services within the Swift Ecosystem.
@@ -20,11 +39,11 @@ const Privacy = () => {
         <div className="lg:-mt-10">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f7f5f6 " fill-opacity="1" d="M0,160L26.7,138.7C53.3,117,107,75,160,80C213.3,85,267,139,320,149.3C373.3,160,427,128,480,144C533.3,160,587,224,640,256C693.3,288,747,288,800,250.7C853.3,213,907,139,960,122.7C1013.3,107,1067,149,1120,186.7C1173.3,224,1227,256,1280,234.7C1333.3,213,1387,139,1413,101.3L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
         </div>
-      </div>
-      <div className="text-[#ff850b]">
+      </div> */}
+      <div className="">
         <div className="mb-10 md:mb-20">
           <div className="text-start mx-5 md:mx-[10rem] text-lg mt-2">
-            <div className="font-bold text-2xl mb-2">1. Information We Collect</div>
+            <div className="font-extrabold text-4xl mb-3">1. Information We Collect</div>
             <div className="">We collect the following types of information to provide and improve our services:</div>
             <div className="">
               <div className="">a. Personal Information</div>
@@ -67,7 +86,7 @@ const Privacy = () => {
 
         <div className="mb-10 md:mb-20">
           <div className="text-start mx-5 md:mx-[10rem] text-lg mt-2">
-            <div className="font-bold text-2xl mb-2">2. How We Use Your Information</div>
+            <div className="font-extrabold text-4xl mb-3">2. How We Use Your Information</div>
             <div className="">We use the information we collect to:</div>
             <div className=''>
               <div className='mb-3'> <span className="font-bold">1. Provide Services:</span> Ensure you can mine Swift Points, track your progress, and redeem rewards.</div>
@@ -81,7 +100,7 @@ const Privacy = () => {
 
         <div className="mb-10 md:mb-20">
           <div className="text-start mx-5 md:mx-[10rem] text-lg mt-2">
-            <div className="font-bold text-2xl mb-2">3. Sharing Your Information</div>
+            <div className="font-extrabold text-4xl mb-3">3. Sharing Your Information</div>
             <div className="">We do not sell or rent your personal information to third parties. However, we may share your data in the following scenarios:          </div>
             <div className=''>
               <div className="mt-8">
@@ -104,7 +123,7 @@ const Privacy = () => {
 
         <div className="mb-10 md:mb-20">
           <div className="text-start mx-5 md:mx-[10rem] text-lg mt-2">
-            <div className="font-bold text-2xl mb-2">4. Security of Your Information</div>
+            <div className="font-extrabold text-4xl mb-3">4. Security of Your Information</div>
             <div className="">We prioritize the security of your data and employ industry-standard measures to protect it, including:</div>
             <div className="">Data encryption during transmission and storage</div>
             <div className="">Secure user authentication</div>
@@ -115,7 +134,7 @@ const Privacy = () => {
 
         <div className="mb-10 md:mb-20">
           <div className="text-start mx-5 md:mx-[10rem] text-lg mt-2">
-            <div className="font-bold text-2xl mb-2">5. Your Choices and Rights          </div>
+            <div className="font-extrabold text-4xl mb-3">5. Your Choices and Rights          </div>
             <div className="">We respect your control over your personal information. You can:</div>
             <div className=''>
               <div className='mb-3'> <span className="font-bold">1. Access and Update Information:</span> Ensure you can mine Swift Points, track your progress, and redeem rewards.</div>
@@ -128,28 +147,28 @@ const Privacy = () => {
 
         <div className="mb-10 md:mb-20">
           <div className="text-start mx-5 md:mx-[10rem] text-lg mt-2">
-            <div className="font-bold text-2xl mb-2">6. Children’s Privacy</div>
+            <div className="font-extrabold text-4xl mb-3">6. Children’s Privacy</div>
             <div className="">The Swift Points Mining App is not intended for children under 13. We do not knowingly collect data from minors. If we discover that a child’s information has been collected, it will be promptly deleted.</div>
           </div>
         </div>
 
         <div className="mb-10 md:mb-20">
           <div className="text-start mx-5 md:mx-[10rem] text-lg mt-2">
-            <div className="font-bold text-2xl mb-2">7. International Data Transfers          </div>
+            <div className="font-extrabold text-4xl mb-3">7. International Data Transfers          </div>
             <div className="">Your data may be stored and processed outside your country of residence. We ensure compliance with applicable data protection laws for international transfers.</div>
           </div>
         </div>
 
         <div className="mb-10 md:mb-20">
           <div className="text-start mx-5 md:mx-[10rem] text-lg mt-2">
-            <div className="font-bold text-2xl mb-2">8. Updates to This Privacy Policy          </div>
+            <div className="font-extrabold text-4xl mb-3">8. Updates to This Privacy Policy          </div>
             <div className="">We may update this Privacy Policy to reflect changes in technology, regulations, or our services. Any updates will be posted on this page, and significant changes will be communicated through the app or email.</div>
           </div>
         </div>
 
         <div className="mb-10 md:mb-20">
           <div className="text-start mx-5 md:mx-[10rem] text-lg mt-2">
-            <div className="font-bold text-2xl mb-2">9. Contact Us</div>
+            <div className="font-extrabold text-4xl mb-3">9. Contact Us</div>
             <div className="">If you have questions or concerns about this Privacy Policy, please contact us at:</div>
             <div className="">Swift Points Team</div>
             <div className="">Email: support@swiftpointsproject.com          </div>

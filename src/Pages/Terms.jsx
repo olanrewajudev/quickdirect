@@ -6,19 +6,19 @@ const Terms = () => {
   return (
     <Layout>
       <div className="">
-        <div className="bg-[#ff850b] z-30 md:flex pt-[7rem] lg:px-20 px-10 items-center justify-center h-auto lg:h-[32rem]">
+        <div className="bg-[#f7f5f6] z-30 md:flex pt-[7rem] lg:px-20 px-10 items-center justify-center h-auto lg:h-[32rem]">
           <img src={about} alt="" className="lg:w-[35rem] w-[25rem] z-30 object-cover h-auto" />
-          <div className="text-white lg:px-1">
+          <div className="text-[#ff850b] lg:px-1">
             <div className="text-4xl font-semibold">Terms and Conditions for Swift Points Mining App</div>
             <div className="text-lg my-5">Welcome to the Swift Points Mining App. By downloading, accessing, or using the app, you agree to be bound by these Terms and Conditions. If you do not agree, please refrain from using the app.            </div>
             <div className="text-lg font-semibold">Effective Date: 9th January 2024</div>
           </div>
         </div>
-        <div className="lg:-mt-10">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff850b " fill-opacity="1" d="M0,160L26.7,138.7C53.3,117,107,75,160,80C213.3,85,267,139,320,149.3C373.3,160,427,128,480,144C533.3,160,587,224,640,256C693.3,288,747,288,800,250.7C853.3,213,907,139,960,122.7C1013.3,107,1067,149,1120,186.7C1173.3,224,1227,256,1280,234.7C1333.3,213,1387,139,1413,101.3L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
+        <div className="lg:-mt-24">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f7f5f6 " fill-opacity="1" d="M0,160L26.7,138.7C53.3,117,107,75,160,80C213.3,85,267,139,320,149.3C373.3,160,427,128,480,144C533.3,160,587,224,640,256C693.3,288,747,288,800,250.7C853.3,213,907,139,960,122.7C1013.3,107,1067,149,1120,186.7C1173.3,224,1227,256,1280,234.7C1333.3,213,1387,139,1413,101.3L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
         </div>
       </div>
-      <div className="">
+      <div className="text-[#ff850b]">
         <div className="text-3xl my-5 font-bold text-center">These terms form a legal agreement between you (the "User") and Swift Ecosystem (“we,” “our,” or “us”).</div>
         <div className="mb-10 md:mb-20">
           <div className="text-start mx-5 md:mx-[10rem] text-lg mt-2">
